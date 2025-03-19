@@ -13,6 +13,8 @@ Display of the converted value in USD
 
 ✅ Add user interface
 
-✅ Develop a mobile app version
+✅ Real-time exchange rates: The calculator is connected to an API that automatically retrieves the latest exchange rates.
+
+✅ Global trade connection: The goal is to connect the calculator to the global currency market so that it always works with the latest market rates.
 
 📌 Want to contribute? Pull requests are welcome! 😃
