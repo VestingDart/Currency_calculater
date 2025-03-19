@@ -9,13 +9,13 @@ public class Scaner {
 
         // Enter amount of money
         System.out.print("Please enter the amount in euros: ");
-        double euroBetrag = scanner.nextDouble();
+        double euroamount = scanner.nextDouble();
 
         // calculation
-        double usdBetrag = euroBetrag * Exchangerate;
+        double usdamount = euroamount * Exchangerate;
 
         // Output result
-        System.out.printf("The amount in USD: %.2f%n", usdBetrag);
+        System.out.printf("The amount in USD: %.2f%n", usdamount);
 
         // Close scanner
         scanner.close();
