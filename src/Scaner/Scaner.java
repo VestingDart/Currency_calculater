@@ -5,21 +5,19 @@ import java.util.Scanner;
 public class Scaner {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        final double Exchangerate = 1.09;
 
-        final double Wechselkurs = 1.09;
-
-        // Geldbetrag eingeben
-        System.out.print("Bitte geben Sie den Betrag in Euro ein: ");
+        // Enter amount of money
+        System.out.print("Please enter the amount in euros: ");
         double euroBetrag = scanner.nextDouble();
 
+        // calculation
+        double usdBetrag = euroBetrag * Exchangerate;
 
-        // Berechnung
-        double usdBetrag = euroBetrag * Wechselkurs;
+        // Output result
+        System.out.printf("The amount in USD: %.2f%n", usdBetrag);
 
-        // Ergebnis ausgeben
-        System.out.printf("Der Betrag in USD: %.2f%n", usdBetrag);
-
-        // Scanner schließen
+        // Close scanner
         scanner.close();
     }
 }
